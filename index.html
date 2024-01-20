@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <title>新春祝福</title>
 </head>
 
@@ -50,12 +50,12 @@
   }
 
   #btn {
-    margin-top: 100px;
+    margin-top: 5rem; /* 调整按钮距离顶部的高度 */
     background-color: #ffe392;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
-    font-style: 30px;
+    font-size: 25px;
     color: #c6070c;
     cursor: pointer;
   }
@@ -82,8 +82,9 @@
       </ruby>
     </div>
     <span id="line3">( MAY 10,000 THINGS GO ACCORDING TO YOUR WISHES )</span>
+
+    <button id="btn">祝福++</button>
   </div>
-  <button id="btn">祝福++</button>
 
   <script>
     var phrases = [
