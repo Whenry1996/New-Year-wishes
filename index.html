@@ -63,22 +63,26 @@
 <body>
   <div id="app">
     <div id="line">
-      <ruby class="line1">
-        <rt class="line2">wàn</rt>
-        <div>萬</div>
-      </ruby>
-      <ruby class="line1">
-        <rt class="line2">shì</rt>
-        <div>事</div>
-      </ruby>
-      <ruby class="line1">
-        <rt class="line2">rú</rt>
-        <div>如</div>
-      </ruby>
-      <ruby class="line1">
-        <rt class="line2">yì</rt>
-        <div>意</div>
-      </ruby>
+      <div class="line1">
+        <div class="line2">wàn</div>
+        <!-- <span class="line2">wàn</span> -->
+        <div class="span">萬</div>
+      </div>
+      <div class="line1">
+        <div class="line2">shì</div>
+        <!-- <span class="line2">shì</span> -->
+        <div class="span">事</div>
+      </div>
+      <div class="line1">
+        <div class="line2">rú</div>
+        <!-- <span class="line2">rú</span> -->
+        <div class="span">如</div>
+      </div>
+      <div class="line1">
+        <div class="line2">yì</div>
+        <!-- <span class="line2">yì</span> -->
+        <div class="span">意</div>
+      </div>
     </div>
     <span id="line3">( MAY 10,000 THINGS GO ACCORDING TO YOUR WISHES )</span>
 
@@ -101,7 +105,7 @@
 
     // 获取DOM元素
     var generateBtn = document.getElementById('btn');
-    var span = document.querySelectorAll('.line1 > div');
+    var span = document.querySelectorAll('.span');
     var line2 = document.querySelectorAll('.line2');
     var line3 = document.getElementById('line3');
     // 当前短语的索引
